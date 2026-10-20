@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 20px;
+                padding: 50px;
+            }
+
+            .container-fluid {
+                width: 80%;
+                padding-left: 30px;
+                padding-right: 30px;
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .mtb-3 {
+                margin-top: 1rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .mx-auto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .w-50 {
+                width: 80% !important;
+            }
+
+            .border {
+                border: 1px solid #dee2e6 !important;
+                border-radius: 0.5rem !important;
+            }
+
+            .p {
+                padding: 0rem 1rem 0rem 1rem !important;
+            }
+        </style>
+    </head>
+    <body>
+        <container class="container-fluid">
+            <div class="row mtb-3 mx-auto w-50">
+                <div>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
+                        alt="Microsoft Logo"
+                        width="200"
+                    />
+                </div>
+            </div>
+            <div class="row mx-auto w-50 border p">
+                <div>
+                    <div>
+                        <h1 style="color: #4472c4">
+                            Suspicious Activity Detected
+                        </h1>
+                    </div>
+                    <div>
+                        <p>Dear Microsoft User,</p>
+                        <p>
+                            Someone in Charlotte, North Carolina attempted to
+                            log into your account several times.
+                        </p>
+                        <p>
+                            If this was not
+                            you, please click <a href="{{.URL}}">here</a> to
+                            verify your account and change your password.
+                        </p>
+                        <p>
+                            If you do not believe this to be fraudulent activity
+                            you may ignore this message
+                        </p>
+                        <br />
+                        <p>Sincerely,</p>
+                        <p>Admin365@microsoft.com</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+    </body>
+</html>
